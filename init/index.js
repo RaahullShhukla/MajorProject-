@@ -19,6 +19,7 @@ main()
 };*/
 const initDB = async () => {
   await Listing.deleteMany({}); 
+  initData.data = initData.data.map((obj)=>({...obj , owner:"698aa5722dff651c30f8116b"}));
   
   const updatedData = initData.data.map((obj) => ({
     ...obj,

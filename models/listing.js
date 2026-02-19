@@ -40,6 +40,10 @@ const listingSchema = new Schema({
       ref:"Review",
     }
   ],
+  owner :{
+    type: mongoose.Schema.Types.ObjectId,
+    ref:"User",
+  },
 });
 /*const listingSchema= new Schema({
     title:{type:String,
